@@ -14,7 +14,7 @@
     return @"小    明";
 }
 -(void)firstLog{
-    NSLog(@"firstClass--1");
+    NSLog(@"firs tClass--1");
 }
 
 -(void)secondLog{

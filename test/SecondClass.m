@@ -20,7 +20,7 @@
 }
 
 -(void)secondLog{
-    NSLog(@"secondClaa--2");
+    NSLog(@"secondC laa--2");
 }
 -(void)aaa{
     self.age = @"年龄aaa";
