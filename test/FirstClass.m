@@ -11,7 +11,7 @@
 @implementation FirstClass
 
 -(NSString *)getName{
-    return @"小明";
+    return @"小    明";
 }
 -(void)firstLog{
     NSLog(@"firstClass--1");
