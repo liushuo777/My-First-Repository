@@ -10,6 +10,7 @@
 #import "FirstClass.h"
 #import "SecondClass.h"
 #import "TestDelegateProtocol.h"
+#import "ThirdClass.h"
 
 @interface testView : UIView
 
@@ -56,11 +57,14 @@
     self.a =[[NSMutableArray alloc]init];
     FirstClass *aclass = [[FirstClass alloc]init];
     SecondClass *bclass = [[SecondClass alloc]init];
+    ThirdClass *cClass = [[ThirdClass alloc]init];
     [self.a addObject:aclass];
     [self.a addObject:bclass];
+    [self.a addObject:cClass];
     [[self class]changColor];
     testView *t = [[testView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:t];
+    [cClass firstClassNSLog];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,10 +72,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)button1:(id)sender {
-    id <TestDelegateProtocol> de = [self.a objectAtIndex:0];
+    id <TestDelegateProtocol> de = [self.a objectAtIndex:2];
     [de firstLog];
     [de secondLog];
-    NSLog(@"%@",[de getName]);
+//    NSLog(@"%@",[de getName]);
 }
 
 - (IBAction)button2:(id)sender {
@@ -80,6 +84,5 @@
 //    [de secondLog];
     SecondClass *c = [[SecondClass alloc]init];
     [c aaa];
-    NSLog(@"%@",c.age);
 }
 @end

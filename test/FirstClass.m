@@ -23,4 +23,8 @@
 -(void)thirdLog{
     NSLog(@"firstClass--3");
 }
+
+-(void)firstClassNSLog{
+    NSLog(@"firstClassNSLog");
+}
 @end

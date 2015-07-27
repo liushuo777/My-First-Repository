@@ -10,7 +10,7 @@
 
 @interface SecondClass()
 
-@property (nonatomic,strong)NSString *age;
+@property (nonatomic,copy)NSString *age;
 
 @end
 @implementation SecondClass

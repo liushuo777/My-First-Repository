@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88AFF9091B667EA50040CD79 /* ThirdClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AFF9081B667EA50040CD79 /* ThirdClass.m */; };
 		88B5CCAB1B613CAF004EBC9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B5CCAA1B613CAF004EBC9B /* main.m */; };
 		88B5CCAE1B613CAF004EBC9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B5CCAD1B613CAF004EBC9B /* AppDelegate.m */; };
 		88B5CCB11B613CAF004EBC9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B5CCB01B613CAF004EBC9B /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88AFF9071B667EA50040CD79 /* ThirdClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdClass.h; sourceTree = "<group>"; };
+		88AFF9081B667EA50040CD79 /* ThirdClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdClass.m; sourceTree = "<group>"; };
 		88B5CCA51B613CAF004EBC9B /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B5CCA91B613CAF004EBC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B5CCAA1B613CAF004EBC9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				88B5CCB01B613CAF004EBC9B /* ViewController.m */,
 				88ED98671B627549009BFF02 /* FirstClass.h */,
 				88ED98681B627549009BFF02 /* FirstClass.m */,
+				88AFF9071B667EA50040CD79 /* ThirdClass.h */,
+				88AFF9081B667EA50040CD79 /* ThirdClass.m */,
 				88ED986A1B627555009BFF02 /* SecondClass.h */,
 				88ED986B1B627555009BFF02 /* SecondClass.m */,
 				88B5CCB21B613CAF004EBC9B /* Main.storyboard */,
@@ -231,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88AFF9091B667EA50040CD79 /* ThirdClass.m in Sources */,
 				88B5CCB11B613CAF004EBC9B /* ViewController.m in Sources */,
 				88ED986C1B627555009BFF02 /* SecondClass.m in Sources */,
 				88ED98691B627549009BFF02 /* FirstClass.m in Sources */,

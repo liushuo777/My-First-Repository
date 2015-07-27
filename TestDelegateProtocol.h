@@ -11,8 +11,10 @@
 @protocol TestDelegateProtocol <NSObject>
 
 @optional
+
 -(void)firstLog;
 -(void)secondLog;
 -(void)thirdLog;
 -(NSString *)getName;
+
 @end

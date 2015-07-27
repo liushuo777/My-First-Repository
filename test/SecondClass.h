@@ -10,9 +10,6 @@
 #import "TestDelegateProtocol.h"
 @interface SecondClass : NSObject<TestDelegateProtocol>
 
-@property (nonatomic,strong)NSString *name;
-@property (nonatomic,readonly)NSString *age;
-
--(void)testFirstProperty:(NSString *)first second:(NSString *)b third:(int)c;
+@property (nonatomic,readonly)NSString *name;
 -(void)aaa;
 @end
