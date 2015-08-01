@@ -43,7 +43,7 @@
 
 @end
 
-@interface ViewController ()
+@interface ViewController ()<FirstClassDelegate>
 
 @property (nonatomic,strong)NSMutableArray *a;
 
@@ -56,15 +56,26 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.a =[[NSMutableArray alloc]init];
     FirstClass *aclass = [[FirstClass alloc]init];
+    aclass.delegate = self;
     SecondClass *bclass = [[SecondClass alloc]init];
     ThirdClass *cClass = [[ThirdClass alloc]init];
+    
+    
+    
+    Class c = NSClassFromString(@"FirstClass");
+    FirstClass *obj = [[c alloc]init];
+    
+    
+    
+    
+    obj.delegate= self;
+    obj.name= @"haha";
     [self.a addObject:aclass];
     [self.a addObject:bclass];
     [self.a addObject:cClass];
     [[self class]changColor];
     testView *t = [[testView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:t];
-    [cClass firstClassNSLog];
 }
 
 - (void)didReceiveMemoryWarning {

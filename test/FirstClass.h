@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "TestDelegateProtocol.h"
+
+@class FirstClass;
+@protocol FirstClassDelegate <NSObject>
+
+-(void)FireClass:(FirstClass *)firstClass didSec:(NSInteger )inta;
+
+@end
 @interface FirstClass : NSObject<TestDelegateProtocol>
 
 @property (nonatomic, strong)NSString *name;
+@property (nonatomic,assign)id <FirstClassDelegate>delegate;
 
 @end
