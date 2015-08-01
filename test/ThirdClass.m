@@ -19,6 +19,6 @@
     [super firstLog];
 }
 -(void)secondLog{
-    NSLog(@"class 3   2");
+    NSLog(@"c lass 3   2");
 }
 @end
